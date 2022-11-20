@@ -1,0 +1,159 @@
+.body {
+  width: 100%;
+  margin: 150px 0 180px;
+  overflow-x: hidden;
+}
+
+.body__advice {
+  width: 1200px;
+  height: 445px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px auto;
+  gap: 83px;
+}
+
+.body__advice:nth-child(1),
+.body__advice:nth-child(3) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.body__advice--img img {
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+}
+
+.advice__h2 {
+  width: 445px;
+  height: 96px;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #495567;
+  font-family: "Space Mono", sans-serif;
+}
+
+.advice__p {
+  width: 445px;
+  height: 100px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: "Lexend Deca",sans-serif;
+  color: #939caa;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.sours1 {
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  background: #e5ecf4;
+  position: absolute;
+  right: -520px;
+
+}
+
+.sours2 {
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  background: #e5ecf4;
+  position: absolute;
+  left: -520px;
+}
+
+.body__advice--img {
+  display: flex;
+  position: relative;
+}
+
+/* ========== resposive ======== */
+
+/* =========== TABLET =========== */
+
+@media only screen and (max-width: 768px) {
+  .body {
+    max-width: 767px;
+    height: 2800px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .body__advice {
+    display: flex;
+    flex-direction: column !important;
+    display: flex;
+    align-items: center;
+  }
+  .body__advice--img {
+    height: 498px;
+    width: 747px;
+  }
+  .body__advice--p {
+    height: 304px;
+    width: 573px;
+    text-align: center;
+    margin-left: -300px;
+  }
+  .body__advice button {
+    margin-left: -120px;
+  }
+
+  .body__advice:nth-child(2),
+  .body__advice:nth-child(3) {
+    margin-top: 500px;
+  }
+  .body__advice--img:nth-child(1),
+  .body__advice--img:nth-child(3) {
+    margin-right: 150px;
+  }
+  .sours1 {
+    left: 500px;
+  }
+}
+
+/* ======= Mobile ======= */
+@media only screen and (max-width: 376px) {
+  .advice__h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .advice__p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 311px;
+    height: 150px;
+  }
+  .body__advice--img img {
+    height: 311px;
+    max-width: 311px;
+    margin-left: -120px;
+  }
+  .sours1,
+  .sours2   {
+    display: none;
+  }
+  .body__advice--p {
+    margin-right: 400px;
+  }
+  .advice__h2 {
+    max-width: 311px;
+    margin-left: 70px;
+  }
+  .advice__p {
+    margin-left: 70px;
+  }
+}
+
+/* about mobile */
+
+@media only screen and (max-width: 376px) {
+  .about__info {
+    position: relative;
+    top: -200px;
+  }
+}

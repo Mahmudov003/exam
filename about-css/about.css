@@ -1,0 +1,9 @@
+@import "../css/global.css";
+@import "../css/font.css";
+@import "../css/header.css";
+@import "./header.css";
+@import "../css/body.css";
+@import "../about-css/values.css";
+@import "../about-css/faqs.css";
+@import "../css/download.css";
+@import "../css/footer.css"
